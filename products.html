@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!-- SWEET MOMENTS BAKERY - PRODUCTS PAGE (products.html)
+     All ten products with names, descriptions, prices in UGX and pictures.
+     The category buttons at the top work with CSS only - no JavaScript. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products &amp; Prices | Sweet Moments Bakery, Kitintale</title>
+  <meta name="description" content="Eight freshly baked products from Sweet Moments Bakery Kitintale: bread, cookies, cupcakes, birthday cakes, pastries, muffins, mandazi and red velvet cake, with prices in Uganda shillings.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="logo.svg" alt="Sweet Moments Bakery">
+        <span><span class="brand__name">Sweet Moments</span><span class="brand__sub">Bakery · Kitintale</span></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu"><span class="burger"></span></label>
+      <nav class="nav" aria-label="Main menu">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="about.html">About</a>
+        <a href="pay.html">How to Pay</a>
+        <a href="policies.html">Policies</a>
+        <a class="btn btn--wa" href="https://wa.me/256750568522?text=Hello%20Sweet%20Moments%20Bakery%2C%20I%20would%20like%20to%20place%20an%20order" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <img class="page-hero__bg" src="images/banner-inner.jpg" alt="">
+      <div class="container">
+        <div class="crumbs">Home / Products</div>
+        <h1>Everything we bake</h1>
+        <p>Ten products, four collections, one honest price list. The item codes below are the same codes used in our WhatsApp catalogue so your order is never confused.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <p class="note">Prices are the price list this student group created for Sweet Moments Bakery. They are in Uganda shillings and include packaging. Delivery is charged separately — see the <a href="policies.html">delivery table</a>.</p>
+
+        <div class="section-head" style="margin-top:2.6rem;">
+          <span class="eyebrow">Browse the menu</span>
+          <h2>Choose a collection</h2>
+          <p>Tap a button to see only that collection.</p>
+        </div>
+
+        <!-- The invisible radio buttons sit next to their labels, and the
+             product grid is their sibling - that is how CSS filters them. -->
+        <div class="catalog">
+          <input type="radio" name="cat" id="f-all" checked>
+          <label for="f-all">All products</label>
+          <input type="radio" name="cat" id="f-bread">
+          <label for="f-bread">Breads &amp; mandazi</label>
+          <input type="radio" name="cat" id="f-cake">
+          <label for="f-cake">Cakes &amp; cupcakes</label>
+          <input type="radio" name="cat" id="f-cookie">
+          <label for="f-cookie">Cookies &amp; muffins</label>
+          <input type="radio" name="cat" id="f-pastry">
+          <label for="f-pastry">Pastries</label>
+
+          <div class="product-grid">
+
+            <!-- PRODUCT 1 -->
+            <article class="product product--bread">
+              <div class="product__media">
+                <span class="product__tag">Daily</span>
+                <img src="images/product1.jpg" alt="Sliced loaf of fresh milk bread" loading="lazy">
+              </div>
+              <div class="product__body">
+                <h3>Fresh Milk Bread</h3>
+                <p>Soft 700 g loaf with a golden crust, baked at 6:00 am. Good for tea, sandwiches and school lunchboxes.</p>
+                <div class="product__foot">
+                  <span class="price">UGX 6,000 <small>700 g loaf</small></span>
+                  <span class="code">SM-BRD-01</span>
+                </div>
+                <a class="btn btn--wa" href="https://wa.me/256750568522?text=I%20would%20like%20to%20order%20Fresh%20Milk%20Bread%20(SM-BRD-01)" target="_blank" rel="noopener" style="justify-content:center;">Order this</a>
+              </div>
+            </article>
+
+            <!-- PRODUCT 2 -->
+            <article class="product product--cookie">
+              <div class="product__media">
+                <span class="product__tag">Tea time</span>
+                <img src="images/product2.jpg" alt="Chocolate chip cookies" loading="lazy">
+              </div>
+              <div class="product__body">
+                <h3>Chocolate Chip Cookies</h3>
+                <p>Six crunchy-edged cookies with soft centres and real chocolate chips, packed in a clear box.</p>
+                <div class="product__foot">
+                  <span class="price">UGX 8,000 <small>pack of 6</small></span>
+                  <span class="code">SM-CKE-02</span>
+                </div>
+                <a class="btn btn--wa" href="https://wa.me/256750568522?text=I%20would%20like%20to%20order%20Chocolate%20Chip%20Cookies%20(SM-CKE-02)" target="_blank" rel="noopener" style="justify-content:center;">Order this</a>
+              </div>
+            </article>
+
+            <!-- PRODUCT 3 -->
+            <article class="product product--cake">
+              <div class="product__media">
+                <span class="product__tag">Party pack</span>
+                <img src="images/product3.jpg" alt="Six frosted cupcakes" loading="lazy">
+              </div>
+              <div class="product__body">
+                <h3>Party Cupcakes</h3>
+                <p>Six buttercream cupcakes in vanilla, chocolate or a mix. Add a number topper for UGX 2,000.</p>
+                <div class="product__foot">
+                  <span class="price">UGX 12,000 <small>box of 6</small></span>
+                  <span class="code">SM-CUP-03</span>
+                </div>
+                <a class="btn btn--wa" href="https://wa.me/256750568522?text=I%20would%20like%20to%20order%20Party%20Cupcakes%20(SM-CUP-03)" target="_blank" rel="noopener" style="justify-content:center;">Order this</a>
+              </div>
+            </article>
+
+            <!-- PRODUCT 4 -->
+            <article class="product product--cake">
+              <div class="product__media">
+                <span class="product__tag">48 h notice</span>
+                <img src="images/product4.jpg" alt="Decorated birthday cake with chocolate drip" loading="lazy">
+              </div>
+              <div class="product__body">
+                <h3>Birthday Cake</h3>
+                <p>Custom 1 kg cake: choose vanilla, chocolate or red velvet, plus the name and message written on top.</p>
+                <div class="product__foot">
+                  <span class="price">UGX 45,000 <small>1 kg, custom</small></span>
+                  <span class="code">SM-CAK-04</span>
+                </div>
+                <a class="btn btn--wa" href="https://wa.me/256750568522?text=I%20would%20like%20to%20order%20a%20Birthday%20Cake%20(SM-CAK-04)" target="_blank" rel="noopener" style="justify-content:center;">Order this</a>
+              </div>
+            </article>
+
+            <!-- PRODUCT 5 -->
+            <article class="product product--pastry">
+              <div class="product__media">
+                <span class="product__tag">6:00 am</span>
+                <img src="images/product5.jpg" alt="Golden meat pies and samosas" loading="lazy">
+              </div>
+              <div class="product__body">
+                <h3>Meat Pies &amp; Samosas</h3>
+                <p>Ten pieces of flaky pastry with savoury mince filling — served hot at breakfast or packed for a meeting.</p>
+                <div class="product__foot">
+                  <span class="price">UGX 15,000 <small>pack of 10</small></span>
+                  <span class="code">SM-PAS-05</span>
+                </div>
+                <a class="btn btn--wa" href="https://wa.me/256750568522?text=I%20would%20like%20to%20order%20Meat%20Pies%20%26%20Samosas%20(SM-PAS-05)" target="_blank" rel="noopener" style="justify-content:center;">Order this</a>
+              </div>
+            </article>
+
+            <!-- PRODUCT 6 -->
+            <article class="product product--cookie">
+              <div class="product__media">
+                <span class="product__tag">School lunch</span>
+                <img src="images/product6.jpg" alt="Blueberry muffins" loading="lazy">
+              </div>
+              <div class="product__body">
+                <h3>Blueberry Muffins</h3>
+                <p>Four domed muffins with a golden crumb top. Sweet enough for a treat, light enough for breakfast.</p>
+                <div class="product__foot">
+                  <span class="price">UGX 10,000 <small>pack of 4</small></span>
+                  <span class="code">SM-MUF-06</span>
+                </div>
+                <a class="btn btn--wa" href="https://wa.me/256750568522?text=I%20would%20like%20to%20order%20Blueberry%20Muffins%20(SM-MUF-06)" target="_blank" rel="noopener" style="justify-content:center;">Order this</a>
+              </div>
+            </article>
+
+            <!-- PRODUCT 7 -->
+            <article class="product product--bread">
+              <div class="product__media">
+                <span class="product__tag">Warm at 6 am</span>
+                <img src="images/product7.jpg" alt="Golden mandazi in a basket" loading="lazy">
+              </div>
+              <div class="product__body">
+                <h3>Warm Mandazi</h3>
+                <p>Ten soft, lightly sweetened mandazi fried fresh in the morning. Best eaten within two hours.</p>
+                <div class="product__foot">
+                  <span class="price">UGX 5,000 <small>pack of 10</small></span>
+                  <span class="code">SM-MND-07</span>
+                </div>
+                <a class="btn btn--wa" href="https://wa.me/256750568522?text=I%20would%20like%20to%20order%20Warm%20Mandazi%20(SM-MND-07)" target="_blank" rel="noopener" style="justify-content:center;">Order this</a>
+              </div>
+            </article>
+
+            <!-- PRODUCT 8 -->
+            <article class="product product--cake">
+              <div class="product__media">
+                <span class="product__tag">Weekend</span>
+                <img src="images/product8.jpg" alt="Slices of red velvet cake with cream cheese frosting" loading="lazy">
+              </div>
+              <div class="product__body">
+                <h3>Red Velvet Cake</h3>
+                <p>Moist red velvet with cream cheese frosting. Sold whole (1 kg) or by the slice at the shop.</p>
+                <div class="product__foot">
+                  <span class="price">UGX 40,000 <small>1 kg whole cake</small></span>
+                  <span class="code">SM-CAK-08</span>
+                </div>
+                <a class="btn btn--wa" href="https://wa.me/256750568522?text=I%20would%20like%20to%20order%20Red%20Velvet%20Cake%20(SM-CAK-08)" target="_blank" rel="noopener" style="justify-content:center;">Order this</a>
+              </div>
+            </article>
+
+            <!-- PRODUCT 9 -->
+            <article class="product product--pastry">
+              <div class="product__media">
+                <span class="product__tag">Box of 6</span>
+                <img src="images/product9.jpg" alt="A box of six assorted ring doughnuts with different toppings" loading="lazy">
+              </div>
+              <div class="product__body">
+                <h3>Assorted Doughnuts</h3>
+                <p>Six ring doughnuts — sugar, chocolate, vanilla and jam — packed in a box. Best eaten on the day of baking.</p>
+                <div class="product__foot">
+                  <span class="price">UGX 12,000 <small>pack of 6</small></span>
+                  <span class="code">SM-DON-09</span>
+                </div>
+                <a class="btn btn--wa" href="https://wa.me/256750568522?text=I%20would%20like%20to%20order%20Assorted%20Doughnuts%20(SM-DON-09)" target="_blank" rel="noopener" style="justify-content:center;">Order this</a>
+              </div>
+            </article>
+
+            <!-- PRODUCT 10 -->
+            <article class="product product--cookie">
+              <div class="product__media">
+                <span class="product__tag">Chocolate</span>
+                <img src="images/product10.jpg" alt="A fudgy chocolate brownie square with a crackled top" loading="lazy">
+              </div>
+              <div class="product__body">
+                <h3>Chocolate Brownies</h3>
+                <p>Six fudgy brownie squares with a crackled top — our answer to the four o'clock slump and the office tea point.</p>
+                <div class="product__foot">
+                  <span class="price">UGX 14,000 <small>pack of 6</small></span>
+                  <span class="code">SM-BRW-10</span>
+                </div>
+                <a class="btn btn--wa" href="https://wa.me/256750568522?text=I%20would%20like%20to%20order%20Chocolate%20Brownies%20(SM-BRW-10)" target="_blank" rel="noopener" style="justify-content:center;">Order this</a>
+              </div>
+            </article>
+
+          </div><!-- /product-grid -->
+        </div><!-- /catalog -->
+      </div>
+    </section>
+
+    <!-- ============ FULL PRICE LIST ============ -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Price list</span>
+          <h2>One table, every price</h2>
+          <p>The same prices appear on WhatsApp and on our social pages. If they ever differ, this page is the correct one.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Item code</th><th>Product</th><th>Pack size</th><th>Price (UGX)</th><th>Collection</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="num">SM-BRD-01</td><td>Fresh Milk Bread</td><td>700 g loaf</td><td class="num">6,000</td><td>Breads &amp; Mandazi</td></tr>
+              <tr><td class="num">SM-CKE-02</td><td>Chocolate Chip Cookies</td><td>Pack of 6</td><td class="num">8,000</td><td>Cookies &amp; Muffins</td></tr>
+              <tr><td class="num">SM-CUP-03</td><td>Party Cupcakes</td><td>Box of 6</td><td class="num">12,000</td><td>Cakes &amp; Cupcakes</td></tr>
+              <tr><td class="num">SM-CAK-04</td><td>Birthday Cake (custom)</td><td>1 kg</td><td class="num">45,000</td><td>Cakes &amp; Cupcakes</td></tr>
+              <tr><td class="num">SM-PAS-05</td><td>Meat Pies &amp; Samosas</td><td>Pack of 10</td><td class="num">15,000</td><td>Pastries &amp; Party Packs</td></tr>
+              <tr><td class="num">SM-MUF-06</td><td>Blueberry Muffins</td><td>Pack of 4</td><td class="num">10,000</td><td>Cookies &amp; Muffins</td></tr>
+              <tr><td class="num">SM-MND-07</td><td>Warm Mandazi</td><td>Pack of 10</td><td class="num">5,000</td><td>Breads &amp; Mandazi</td></tr>
+              <tr><td class="num">SM-CAK-08</td><td>Red Velvet Cake</td><td>1 kg</td><td class="num">40,000</td><td>Cakes &amp; Cupcakes</td></tr>
+              <tr><td class="num">SM-DON-09</td><td>Assorted Doughnuts</td><td>Pack of 6</td><td class="num">12,000</td><td>Pastries &amp; Party Packs</td></tr>
+              <tr><td class="num">SM-BRW-10</td><td>Chocolate Brownies</td><td>Pack of 6</td><td class="num">14,000</td><td>Cookies &amp; Muffins</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- WhatsApp catalogue link (Task 5 requires it on the website) -->
+        <div class="catalogue-cta">
+          <div>
+            <span class="eyebrow">Same list, another app</span>
+            <h3>Open our WhatsApp catalogue</h3>
+            <p>Every product above is also in the Sweet Moments Bakery catalogue inside WhatsApp — same names, same item codes, same prices. Open it, tap a product and send it to us as your order.</p>
+          </div>
+          <a class="btn btn--wa" href="https://wa.me/256750568522?text=Please%20send%20me%20the%20Sweet%20Moments%20Bakery%20catalogue" target="_blank" rel="noopener">Open the catalogue</a>
+        </div>
+      </div>
+    </section>
+    <section class="section section--ink">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Business buyers</span>
+          <h2>Wholesale packs for cafés, schools and offices</h2>
+          <p>Order before 4:00 pm for delivery before 8:00 am the next morning. Business customers pay by bank transfer or mobile money and receive a weekly invoice.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card" style="background:rgba(255,255,255,.07); border-color:rgba(255,255,255,.18);">
+            <span class="num">01</span>
+            <h3>Café tray</h3>
+            <p style="color:#e8d5c2;">24 cupcakes or 20 pastries, mixed flavours, delivered before 8:00 am. <b style="color:#e9a33a;">UGX 42,000</b> · code SM-BIZ-11</p>
+          </article>
+          <article class="card" style="background:rgba(255,255,255,.07); border-color:rgba(255,255,255,.18);">
+            <span class="num">02</span>
+            <h3>School bread plan</h3>
+            <p style="color:#e8d5c2;">50 loaves, three mornings a week, invoiced monthly. <b style="color:#e9a33a;">UGX 5,400 per loaf</b> · SM-BIZ-12</p>
+          </article>
+          <article class="card" style="background:rgba(255,255,255,.07); border-color:rgba(255,255,255,.18);">
+            <span class="num">03</span>
+            <h3>Office tea pack</h3>
+            <p style="color:#e8d5c2;">10 loaves + 12 cookies + 10 mandazi for the tea point. <b style="color:#e9a33a;">UGX 48,000</b> · SM-BIZ-13</p>
+          </article>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn btn--wa" href="https://wa.me/256750568522?text=Hello%20Sweet%20Moments%20Bakery%2C%20please%20send%20me%20the%20wholesale%20price%20list" target="_blank" rel="noopener">Request the wholesale list</a>
+          <a class="btn btn--ghost" href="pay.html">See how businesses pay</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Ready to order?</h2>
+            <p>Send the item code and your area — we reply with the total and the delivery time.</p>
+          </div>
+          <div class="btn-row" style="margin-top:0;">
+            <a class="btn btn--wa" href="https://wa.me/256750568522?text=Hello%20Sweet%20Moments%20Bakery%2C%20I%20would%20like%20to%20place%20an%20order" target="_blank" rel="noopener">Order on WhatsApp</a>
+            <a class="btn btn--gold" href="pay.html">How to pay</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="index.html" style="margin-bottom:.8rem;">
+            <img class="brand__mark" src="logo.svg" alt="Sweet Moments Bakery">
+            <span><span class="brand__name">Sweet Moments</span><span class="brand__sub">Bakery · Kitintale</span></span>
+          </a>
+          <p>Freshly baked bread, cookies, cupcakes, birthday cakes, pastries and muffins — made in Kitintale and delivered across Kampala.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products &amp; prices</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="pay.html">How to pay &amp; order</a></li>
+            <li><a href="policies.html">Policies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Opening hours</h4>
+          <ul>
+            <li>Mon – Fri · 6:00 am – 8:00 pm</li>
+            <li>Saturday · 6:00 am – 9:00 pm</li>
+            <li>Sunday · 7:00 am – 6:00 pm</li>
+            <li>Public holidays · 8:00 am – 4:00 pm</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Talk to us</h4>
+          <ul class="contact-list">
+            <li><span class="k">Call</span> <a href="https://wa.me/256750568522" target="_blank" rel="noopener">+256 750 568 522</a></li>
+            <li><span class="k">Email</span> <a href="mailto:sweetbakeries@gmail.com">sweetbakeries@gmail.com</a></li>
+            <li><span class="k">Visit</span> Kitintale, Nakawa Division, Kampala, Uganda</li>
+          </ul>
+          <h4 class="spaced">Follow the bakery</h4>
+          <div class="social-row">
+            <a href="https://www.facebook.com/SweetMomentsBakeryUG" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.tiktok.com/@sweetmoments.ug" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://www.youtube.com/@SweetMomentsBakeryUG" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.linkedin.com/company/sweet-moments-bakery" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>Student project for <strong>BUC3106 at MUBS</strong> · Not a real shop · Payments are not active</span>
+        <span>© 2026 Sweet Moments Bakery (student project) · <a href="policies.html">Privacy &amp; terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

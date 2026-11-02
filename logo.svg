@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Sweet Moments Bakery logo">
+  <defs>
+    <radialGradient id="disc" cx="32%" cy="26%" r="82%">
+      <stop offset="0" stop-color="#31241a"/>
+      <stop offset="1" stop-color="#16120e"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8cf9b"/>
+      <stop offset="1" stop-color="#c39a4e"/>
+    </linearGradient>
+    <linearGradient id="goldBase" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c39a4e"/>
+      <stop offset="1" stop-color="#9a7633"/>
+    </linearGradient>
+  </defs>
+
+  <!-- badge -->
+  <circle cx="32" cy="32" r="31" fill="url(#disc)"/>
+  <circle cx="32" cy="32" r="28.4" fill="none" stroke="#c39a4e" stroke-width="1.3" opacity=".95"/>
+  <circle cx="32" cy="32" r="25.6" fill="none" stroke="#c39a4e" stroke-width=".5" opacity=".45"/>
+
+  <!-- cherry -->
+  <circle cx="32" cy="17.6" r="3.1" fill="url(#goldBase)"/>
+  <path d="M33.2 15.4c.8-1.7 2.2-2.6 4.1-2.8" fill="none" stroke="#c39a4e" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- frosting dome -->
+  <path d="M19.6 34.6c0-7.1 5.6-12.8 12.4-12.8s12.4 5.7 12.4 12.8z" fill="url(#gold)"/>
+  <!-- one soft swirl across the dome -->
+  <path d="M21.4 31.8c3.3-2.2 6.9-3.3 10.6-3.3s7.3 1.1 10.6 3.3"
+        fill="none" stroke="#16120e" stroke-width="1.1" stroke-linecap="round" opacity=".38"/>
+
+  <!-- cup base -->
+  <path d="M21.2 35.6h21.6l-2.7 13.1c-.45 2.2-2.36 3.8-4.63 3.8H28.53c-2.27 0-4.18-1.6-4.63-3.8z"
+        fill="url(#goldBase)"/>
+  <!-- ribs -->
+  <g stroke="#16120e" stroke-width="1.3" stroke-linecap="round" opacity=".7">
+    <path d="M27.4 37.4 26.4 50.2"/>
+    <path d="M32 37.4v12.8"/>
+    <path d="M36.6 37.4l1 12.8"/>
+  </g>
+
+  <!-- serving plate -->
+  <path d="M17.6 54.6h28.8" stroke="#c39a4e" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M21.8 57.4h20.4" stroke="#c39a4e" stroke-width="1" stroke-linecap="round" opacity=".6"/>
+</svg>

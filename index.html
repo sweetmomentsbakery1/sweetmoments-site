@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     SWEET MOMENTS BAKERY - HOME PAGE (index.html)
+     Part of the BUC3106 E-Commerce Capstone Project, MUBS.
+     Built with HTML + CSS only - no JavaScript.
+     Styles live in style.css (linked in the <head> below).
+============================================================ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sweet Moments Bakery | Fresh Bread, Cakes &amp; Pastries in Kitintale, Kampala</title>
+  <meta name="description" content="Sweet Moments Bakery bakes fresh bread, cookies, cupcakes, birthday cakes, pastries and muffins daily in Kitintale, Kampala. Order on WhatsApp - delivery same day. Student project for BUC3106 at MUBS.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <!-- Google Fonts: Fraunces (display) + Inter (interface) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- The one stylesheet for the whole site -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER (same on all five pages) ============ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="logo.svg" alt="Sweet Moments Bakery">
+        <span><span class="brand__name">Sweet Moments</span><span class="brand__sub">Bakery · Kitintale</span></span>
+      </a>
+
+      <!-- Checkbox + label = mobile menu button, no JavaScript needed -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu"><span class="burger"></span></label>
+
+      <nav class="nav" aria-label="Main menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="pay.html">How to Pay</a>
+        <a href="policies.html">Policies</a>
+        <a class="btn btn--wa" href="https://wa.me/256750568522?text=Hello%20Sweet%20Moments%20Bakery%2C%20I%20would%20like%20to%20place%20an%20order" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <img class="hero__bg" src="images/banner.jpg" alt="The Sweet Moments Bakery display case filled with fresh pastries, doughnuts and cream buns">
+      <div class="container">
+        <div class="hero__inner">
+          <span class="eyebrow hero__eyebrow">Baked fresh every morning · Kitintale</span>
+          <h1>Warm bread, sweet cakes and <em>happy moments</em>, delivered to your door.</h1>
+          <p class="hero__lead">Bread, cookies, cupcakes, birthday cakes, pastries and muffins — mixed from scratch each morning, then delivered anywhere in Kampala the same day you order.</p>
+          <div class="hero__rule"></div>
+
+          <div class="btn-row">
+            <a class="btn btn--gold" href="https://wa.me/256750568522?text=Hello%20Sweet%20Moments%20Bakery%2C%20I%20would%20like%20to%20place%20an%20order" target="_blank" rel="noopener">Order on WhatsApp</a>
+            <a class="btn btn--light" href="products.html">View the menu</a>
+          </div>
+        </div>
+
+        <div class="hero__facts">
+          <span><b>6:00 am</b>Ovens on daily</span>
+          <span><b>Same day</b>Delivery in Kampala</span>
+          <span><b>10 products</b>One honest price list</span>
+          <span><b>Wholesale</b>Cafés · schools · offices</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MOVING RIBBON ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Fresh milk bread</span><span>Chocolate chip cookies</span><span>Party cupcakes</span><span>Birthday cakes</span><span>Meat pies &amp; samosas</span><span>Blueberry muffins</span><span>Warm mandazi</span><span>Red velvet cake</span>
+        <span>Fresh milk bread</span><span>Chocolate chip cookies</span><span>Party cupcakes</span><span>Birthday cakes</span><span>Meat pies &amp; samosas</span><span>Blueberry muffins</span><span>Warm mandazi</span><span>Red velvet cake</span>
+      </div>
+    </div>
+
+    <!-- ============ THREE REASONS TO CHOOSE US ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Why choose us</span>
+          <h2>Three simple promises</h2>
+          <p>We keep our promise small so we can keep it every single day.</p>
+        </div>
+
+        <div class="grid grid--features">
+          <article class="feature">
+            <span class="num">01</span>
+            <h3>Baked the same morning</h3>
+            <p>Everything is mixed, baked and packed before 9:00 am. Nothing sits on a shelf for days — what you buy was in the oven today.</p>
+          </article>
+          <article class="feature">
+            <span class="num">02</span>
+            <h3>Honest prices, clear portions</h3>
+            <p>Every price is printed on this website and in our WhatsApp catalogue, and the size or piece count is written next to it. No surprises at the door.</p>
+          </article>
+          <article class="feature">
+            <span class="num">03</span>
+            <h3>Same-day delivery</h3>
+            <p>Order before 4:00 pm and your bread, pastries or cake reach you the same day anywhere in Kampala, Nakawa and Namuwongo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PRODUCTS ============ -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Straight from the oven</span>
+          <h2>This week's favourites</h2>
+          <p>Tap a product to see the full menu, sizes and item codes. Every code matches our WhatsApp catalogue.</p>
+        </div>
+
+        <div class="grid grid--4">
+          <article class="product">
+            <div class="product__media">
+              <span class="product__tag">Daily</span>
+              <img src="images/product1.jpg" alt="A sliced loaf of fresh milk bread on a wooden board" loading="lazy">
+            </div>
+            <div class="product__body">
+              <h3>Fresh Milk Bread</h3>
+              <p>Soft 700 g loaf with a golden crust — the everyday loaf for tea and sandwiches.</p>
+              <div class="product__foot">
+                <span class="price">UGX 6,000 <small>700 g loaf</small></span>
+                <span class="code">SM-BRD-01</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__media">
+              <span class="product__tag">Best seller</span>
+              <img src="images/product4.jpg" alt="A decorated birthday cake with chocolate drip and strawberries" loading="lazy">
+            </div>
+            <div class="product__body">
+              <h3>Birthday Cake</h3>
+              <p>Custom 1 kg cake, your flavour and message. Give us 48 hours' notice.</p>
+              <div class="product__foot">
+                <span class="price">UGX 45,000 <small>1 kg, custom</small></span>
+                <span class="code">SM-CAK-04</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__media">
+              <span class="product__tag">Party pack</span>
+              <img src="images/product3.jpg" alt="Six frosted cupcakes with swirled buttercream" loading="lazy">
+            </div>
+            <div class="product__body">
+              <h3>Party Cupcakes</h3>
+              <p>Six buttercream cupcakes in vanilla, chocolate or a mix of both.</p>
+              <div class="product__foot">
+                <span class="price">UGX 12,000 <small>box of 6</small></span>
+                <span class="code">SM-CUP-03</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__media">
+              <span class="product__tag">6:00 am</span>
+              <img src="images/product5.jpg" alt="Golden meat pies and samosas on a wooden board" loading="lazy">
+            </div>
+            <div class="product__body">
+              <h3>Meat Pies &amp; Samosas</h3>
+              <p>Flaky golden pastry with a savoury filling — hot from the oven at breakfast.</p>
+              <div class="product__foot">
+                <span class="price">UGX 15,000 <small>pack of 10</small></span>
+                <span class="code">SM-PAS-05</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn-row" style="justify-content:center; margin-top:2.2rem;">
+          <a class="btn btn--ghost" href="products.html">View all 10 products and prices →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OUR STORY (short) ============ -->
+    <section class="section">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Our story</span>
+          <h2>It started with one oven in Kitintale</h2>
+          <p class="lead">Sweet Moments Bakery began when a family in Kitintale started baking extra loaves for the neighbours. The loaves finished faster than they could bake them.</p>
+          <p>Today we bake bread, cookies, cupcakes, birthday cakes, pastries and muffins for households, and we supply trays of bread and cupcakes to cafés, schools and offices around Nakawa division. Everything is still mixed by hand in the same kitchen.</p>
+          <ul class="checklist">
+            <li>Real kitchen, real bakers, real ingredients you can pronounce</li>
+            <li>Wholesale prices for cafés, schools, offices and event planners</li>
+            <li>Order on WhatsApp in one message — no app to download</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn--ghost" href="about.html">Read our full story</a>
+          </div>
+        </div>
+        <div class="frame">
+          <img src="images/about.jpg" alt="A baker piping buttercream onto a birthday cake in the Sweet Moments kitchen">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOR BUSINESS CUSTOMERS ============ -->
+    <section class="section section--ink">
+      <div class="container">
+        <div class="split">
+          <div>
+            <span class="eyebrow">For business buyers</span>
+            <h2>Cafés, schools and offices: bread on account</h2>
+            <p>We deliver standing orders every morning before 8:00 am, invoice weekly and accept bank transfer or mobile money. Minimum standing order: 20 loaves or 24 cupcakes.</p>
+            <div class="badge-line">
+              <span>Cafés &amp; restaurants</span>
+              <span>Schools &amp; nurseries</span>
+              <span>Offices</span>
+              <span>Events &amp; weddings</span>
+            </div>
+            <div class="btn-row">
+              <a class="btn btn--wa" href="https://wa.me/256750568522?text=Hello%20Sweet%20Moments%20Bakery%2C%20I%20would%20like%20a%20wholesale%20quotation" target="_blank" rel="noopener">Request a wholesale price list</a>
+              <a class="btn btn--ghost" href="pay.html">How businesses pay</a>
+            </div>
+          </div>
+          <div>
+            <div class="stat-row">
+              <div class="stat"><b>6:00 am</b><span>Ovens on, every day</span></div>
+              <div class="stat"><b>8:00 am</b><span>Standing orders delivered</span></div>
+              <div class="stat"><b>4:00 pm</b><span>Cut-off for same-day delivery</span></div>
+            </div>
+            <div class="stat-row">
+              <div class="stat"><b>10</b><span>Products in the catalogue</span></div>
+              <div class="stat"><b>4</b><span>Delivery zones in Kampala</span></div>
+              <div class="stat"><b>48 h</b><span>Notice for custom cakes</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DELIVERY ============ -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Delivery</span>
+          <h2>We come to you</h2>
+          <p>Delivery is arranged on WhatsApp when you order. The zones and fees below are our published delivery prices for this project.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="card"><span class="zone">A</span><h3>Kitintale &amp; Ntinda</h3><p>UGX 2,000 · 30–45 minutes after the 4:00 pm cut-off.</p></article>
+          <article class="card"><span class="zone">B</span><h3>Namuwongo &amp; Nakawa</h3><p>UGX 3,000 · same day if ordered before 4:00 pm.</p></article>
+          <article class="card"><span class="zone">C</span><h3>Kampala CBD</h3><p>UGX 5,000 · delivered between 12:00 and 6:00 pm.</p></article>
+          <article class="card"><span class="zone">D</span><h3>Bukoto, Kisaasi, Kololo</h3><p>UGX 6,000 · same day where traffic allows.</p></article>
+        </div>
+        <p class="note" style="margin-top:1.6rem;">Free delivery on orders above UGX 60,000 inside Kitintale and Ntinda. Full delivery rules are on the <a href="policies.html">Policies page</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ CALL TO ACTION ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Craving something warm?</h2>
+            <p>Send us one WhatsApp message with what you want and your area. We reply with the total and the delivery time.</p>
+          </div>
+          <div class="btn-row" style="margin-top:0;">
+            <a class="btn btn--wa" href="https://wa.me/256750568522?text=Hello%20Sweet%20Moments%20Bakery%2C%20I%20would%20like%20to%20place%20an%20order" target="_blank" rel="noopener">Chat with us</a>
+            <a class="btn btn--gold" href="pay.html">How to pay</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER (same on all five pages) ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img class="brand__mark" src="logo.svg" alt="Sweet Moments Bakery">
+            <span><span class="brand__name">Sweet Moments</span><span class="brand__sub">Bakery · Kitintale</span></span>
+          </a>
+          <p>Freshly baked bread, cookies, cupcakes, birthday cakes, pastries and muffins — made in Kitintale and delivered across Kampala.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products &amp; prices</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="pay.html">How to pay &amp; order</a></li>
+            <li><a href="policies.html">Policies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Opening hours</h4>
+          <ul>
+            <li>Mon – Fri · 6:00 am – 8:00 pm</li>
+            <li>Saturday · 6:00 am – 9:00 pm</li>
+            <li>Sunday · 7:00 am – 6:00 pm</li>
+            <li>Public holidays · 8:00 am – 4:00 pm</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Talk to us</h4>
+          <ul class="contact-list">
+            <li><span class="k">Call</span> <a href="https://wa.me/256750568522" target="_blank" rel="noopener">+256 750 568 522</a></li>
+            <li><span class="k">Email</span> <a href="mailto:sweetbakeries@gmail.com">sweetbakeries@gmail.com</a></li>
+            <li><span class="k">Visit</span> Kitintale, Nakawa Division, Kampala, Uganda</li>
+          </ul>
+          <h4 class="spaced">Follow the bakery</h4>
+          <div class="social-row">
+            <a href="https://www.facebook.com/SweetMomentsBakeryUG" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.tiktok.com/@sweetmoments.ug" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://www.youtube.com/@SweetMomentsBakeryUG" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.linkedin.com/company/sweet-moments-bakery" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>Student project for <strong>BUC3106 at MUBS</strong> · Not a real shop · Payments are not active</span>
+        <span>© 2026 Sweet Moments Bakery (student project) · <a href="policies.html">Privacy &amp; terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

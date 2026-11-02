@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!-- SWEET MOMENTS BAKERY - HOW TO PAY AND ORDER (pay.html)
+     Task 7 of the BUC3106 project: every payment method with a name,
+     three short steps, the details to pay to, how we confirm payment
+     and our refund rule. All payment numbers are marked SAMPLE. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Pay &amp; Order | Sweet Moments Bakery</title>
+  <meta name="description" content="Five ways to pay Sweet Moments Bakery: MTN Mobile Money, Airtel Money, cash on delivery, bank transfer for businesses and card payment. Each with three clear steps. Student project - payments are not active.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="logo.svg" alt="Sweet Moments Bakery">
+        <span><span class="brand__name">Sweet Moments</span><span class="brand__sub">Bakery · Kitintale</span></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu"><span class="burger"></span></label>
+      <nav class="nav" aria-label="Main menu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="pay.html" class="active">How to Pay</a>
+        <a href="policies.html">Policies</a>
+        <a class="btn btn--wa" href="https://wa.me/256750568522?text=Hello%20Sweet%20Moments%20Bakery%2C%20I%20would%20like%20to%20place%20an%20order" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <img class="page-hero__bg" src="images/banner-inner.jpg" alt="">
+      <div class="container">
+        <div class="crumbs">Home / How to Pay &amp; Order</div>
+        <h1>How to pay &amp; order</h1>
+        <p>Five ways to pay, three steps each. Read the box marked <span class="sample">SAMPLE</span> — this is a student project, so no money can move through this page.</p>
+      </div>
+    </section>
+
+    <!-- ============ IMPORTANT STUDENT-PROJECT NOTE ============ -->
+    <section class="section" style="padding-bottom:0;">
+      <div class="container">
+        <p class="note" style="font-size:1rem;">
+          <b>This is a student project for BUC3106 at MUBS. Payments are not active.</b>
+          The bank account numbers, till numbers and card links below are obvious sample numbers
+          marked <span class="sample">SAMPLE</span>. No real money is collected on this website and
+          no customer details are stored on this website. When a real shop opens, it replaces these
+          numbers with the shop's real, verified details.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ ORDERING FIRST ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Before you pay</span>
+          <h2>Ordering takes three steps</h2>
+          <p>Nothing is paid on the website. You order, we confirm, then you pay using one of the methods below.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <span class="num">01</span>
+            <h3>Send your order</h3>
+            <p>Open WhatsApp and send the item codes, quantities and your delivery area. We reply with the total, including delivery.</p>
+          </article>
+          <article class="card">
+            <span class="num">02</span>
+            <h3>We confirm the total</h3>
+            <p>You get a written confirmation: products, quantity, delivery fee, total and the expected delivery time.</p>
+          </article>
+          <article class="card">
+            <span class="num">03</span>
+            <h3>Pay, then we bake</h3>
+            <p>Pay with one of the five methods below and send the transaction ID. We confirm it from our own records and start baking.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE FIVE PAYMENT METHODS ============ -->
+    <section class="section section--sand" id="methods">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Payment methods</span>
+          <h2>Choose the one that suits you</h2>
+          <p>Every box shows the method, three short steps and the details to pay to.</p>
+        </div>
+
+        <div class="pay-grid">
+
+          <!-- METHOD 1: MTN MOBILE MONEY -->
+          <article class="pay-card">
+            <div class="pay-card__head">
+              <h3>Payment method 01<span class="method">MTN Mobile Money (MoMo)</span></h3>
+              <span class="sample">SAMPLE</span>
+            </div>
+            <div class="pay-card__body">
+              <p style="font-size:.95rem; color:var(--muted);">Best for households in Kampala. You pay from your own MTN handset.</p>
+              <ol class="steps">
+                <li>Open the MoMo menu on your phone (<b>*165#</b> or the My MTN app) and choose <b>Send Money</b>.</li>
+                <li>Enter the sample number below and the total we quoted, then enter your MoMo PIN.</li>
+                <li>Copy the transaction ID from the confirmation SMS and send it to us on WhatsApp.</li>
+              </ol>
+              <div class="pay-details">
+                <b>Pay to (MoMo name):</b> Sweet Moments Bakery <span class="sample">SAMPLE</span><br>
+                <b>Sample number:</b> 0772 000 001 <span class="sample">SAMPLE</span><br>
+                <b>Reference:</b> your order code, e.g. SM-CAK-04
+              </div>
+            </div>
+          </article>
+
+          <!-- METHOD 2: AIRTEL MONEY -->
+          <article class="pay-card">
+            <div class="pay-card__head">
+              <h3>Payment method 02<span class="method">Airtel Money</span></h3>
+              <span class="sample">SAMPLE</span>
+            </div>
+            <div class="pay-card__body">
+              <p style="font-size:.95rem; color:var(--muted);">For customers on the Airtel network. Works on every handset, no smartphone needed.</p>
+              <ol class="steps">
+                <li>Dial <b>*165#</b> and choose <b>Send Money</b>.</li>
+                <li>Enter the sample number below, the total amount and your PIN, then confirm.</li>
+                <li>Send us the transaction ID (and the name the money left from) on WhatsApp.</li>
+              </ol>
+              <div class="pay-details">
+                <b>Pay to (Airtel name):</b> Sweet Moments Bakery <span class="sample">SAMPLE</span><br>
+                <b>Sample number:</b> 0740 000 001 <span class="sample">SAMPLE</span><br>
+                <b>Reference:</b> your order code, e.g. SM-BRD-01
+              </div>
+            </div>
+          </article>
+
+          <!-- METHOD 3: CASH ON DELIVERY -->
+          <article class="pay-card">
+            <div class="pay-card__head">
+              <h3>Payment method 03<span class="method">Cash on delivery</span></h3>
+              <span class="sample">Named areas</span>
+            </div>
+            <div class="pay-card__body">
+              <p style="font-size:.95rem; color:var(--muted);">Available in Kitintale, Ntinda, Namuwongo, Nakawa and Kampala CBD.</p>
+              <ol class="steps">
+                <li>Order on WhatsApp and tell us your zone so we can add the delivery fee.</li>
+                <li>Check the items with the rider at your gate before you pay.</li>
+                <li>Pay cash to the rider and ask for a printed or written receipt with the order code.</li>
+              </ol>
+              <div class="pay-details">
+                <b>Pay to:</b> the delivery rider, at handover<br>
+                <b>Amount:</b> exactly the total in your WhatsApp confirmation<br>
+                <b>Note:</b> riders never keep your change beyond UGX 5,000 — carry small notes where possible.
+              </div>
+            </div>
+          </article>
+
+          <!-- METHOD 4: BANK TRANSFER -->
+          <article class="pay-card">
+            <div class="pay-card__head">
+              <h3>Payment method 04<span class="method">Bank transfer for businesses</span></h3>
+              <span class="sample">SAMPLE</span>
+            </div>
+            <div class="pay-card__body">
+              <p style="font-size:.95rem; color:var(--muted);">For cafés, schools and offices paying a weekly invoice or a standing order.</p>
+              <ol class="steps">
+                <li>Ask us for an invoice; it shows the products, the week and the total.</li>
+                <li>Transfer the exact total to the sample account below, using the invoice number as the reference.</li>
+                <li>Send the bank slip (photo or PDF) on WhatsApp or to sweetbakeries@gmail.com.</li>
+              </ol>
+              <div class="pay-details">
+                <b>Account name:</b> Sweet Moments Bakery <span class="sample">SAMPLE</span><br>
+                <b>Bank:</b> Sample Bank, Kitintale branch <span class="sample">SAMPLE</span><br>
+                <b>Sample account no.:</b> 9030 0000 0001 <span class="sample">SAMPLE</span><br>
+                <b>Reference:</b> the invoice number
+              </div>
+            </div>
+          </article>
+
+          <!-- METHOD 5: CARD -->
+          <article class="pay-card">
+            <div class="pay-card__head">
+              <h3>Payment method 05<span class="method">Card — Visa &amp; Mastercard</span></h3>
+              <span class="sample">Not active</span>
+            </div>
+            <div class="pay-card__body">
+              <p style="font-size:.95rem; color:var(--muted);">Only for large orders such as weddings and conferences, through a licensed payment provider.</p>
+              <ol class="steps">
+                <li>We send you a secure payment link from our payment provider — never a photo of a card.</li>
+                <li>You type your card details on the provider's own page, which is protected with https and a padlock.</li>
+                <li>The provider approves the payment and emails you a receipt; we receive the confirmation and bake.</li>
+              </ol>
+              <div class="pay-details">
+                <b>Accepted:</b> Visa and Mastercard, in UGX<br>
+                <b>Provider:</b> a payment service provider licensed by the Bank of Uganda <span class="sample">SAMPLE</span><br>
+                <b>Rule:</b> Sweet Moments Bakery never sees or stores your card number.
+              </div>
+            </div>
+          </article>
+
+          <!-- METHOD 6: HELP BOX -->
+          <article class="pay-card">
+            <div class="pay-card__head pay-card__head--gold">
+              <h3>Need help?<span class="method">Not sure which one to use?</span></h3>
+            </div>
+            <div class="pay-card__body">
+              <p style="font-size:.95rem; color:var(--muted);">Message us and we will tell you the total for your area first. You never pay before you have the total in writing.</p>
+              <ul class="checklist">
+                <li>Small household order → mobile money or cash on delivery</li>
+                <li>Custom or large order → mobile money first, card for events</li>
+                <li>Café, school or office → bank transfer with a weekly invoice</li>
+              </ul>
+              <div class="btn-row">
+                <a class="btn btn--wa" href="https://wa.me/256750568522?text=Hello%2C%20which%20payment%20method%20should%20I%20use%3F" target="_blank" rel="noopener">Ask on WhatsApp</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW WE CONFIRM + REFUNDS ============ -->
+    <section class="section">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Payment confirmation</span>
+          <h2>How we confirm that you paid</h2>
+          <ul class="checklist">
+            <li><b>We check our own records, not your screenshot.</b> A screenshot on its own is never accepted as proof.</li>
+            <li>For mobile money, we open our own MoMo or Airtel menu and read the money in <b>our</b> transaction history using the transaction ID you sent.</li>
+            <li>For bank transfers, we match the amount, date and reference against our own bank statement.</li>
+            <li>For card payments, we wait for the payment provider's own confirmation email — not a picture of one.</li>
+            <li>If the money is not in our records within 30 minutes, we pause the order and ask you to check with your network.</li>
+          </ul>
+        </div>
+        <div>
+          <span class="eyebrow">Refunds</span>
+          <h2>If something goes wrong</h2>
+          <div class="card">
+            <h3>Our refund rule</h3>
+            <ul class="checklist">
+              <li><b>Wrong or damaged item:</b> tell us within 2 hours of delivery with a photo — we remake or refund in full.</li>
+              <li><b>We cannot deliver:</b> a full refund of everything paid, including the delivery fee, within 3 working days.</li>
+              <li><b>Custom cake cancelled 48+ hours ahead:</b> full refund. Less than 48 hours: 50% refund, because ingredients were already bought.</li>
+              <li><b>Cash on delivery returned at the door:</b> pay nothing; the delivery fee for that trip is not charged.</li>
+              <li>Refunds are sent back through the same method you paid with — never to a different number or account.</li>
+            </ul>
+            <p class="note" style="margin-top:1rem;">Refunds are how this project says it <i>would</i> work. No money can move while this is a student project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY THESE METHODS + CRYPTO (Task 7) ============ -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Our reasoning</span>
+          <h2>Why these methods — and why no cryptocurrency</h2>
+          <p>The half-page explanation that goes with this page, in two cards.</p>
+        </div>
+        <div class="why-grid">
+          <article class="card">
+            <span class="num">01</span>
+            <h3>Chosen for the customers we actually have</h3>
+            <p>Most of our orders are small amounts paid from a phone, so <b>MTN Mobile Money</b> and <b>Airtel Money</b> come first: they work on any handset, need no bank account and settle into our account in seconds, so baking can start immediately. <b>Cash on delivery</b> protects the first-time buyer who has never met us — you check the items at your gate before money changes hands. <b>Bank transfer</b> exists for cafés, schools and offices, who need an invoice they can file for their accounts. <b>Card payment</b> is kept for large event orders through a licensed provider, and the customer types the card number on the provider's own page — never on ours.</p>
+          </article>
+          <article class="card">
+            <span class="num">02</span>
+            <h3>Why we do not accept cryptocurrency</h3>
+            <p>The Bank of Uganda has stated that cryptocurrencies such as Bitcoin are <b>not legal tender</b> in Uganda, that it does not issue or regulate them, and it has warned the public that anyone who buys or sells them does so at their own risk. Payment providers that move money in Uganda must be licensed by the Bank of Uganda. Because we could not honour the refund promise on our <a href="policies.html">Policies page</a> in an unregulated token — nor show URA where the income came from — Sweet Moments Bakery accepts mobile money, cash on delivery, bank transfer and cards through a licensed provider only.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DELIVERY FEES ============ -->
+    <section class="section section--ink">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Delivery fees</span>
+          <h2>Added to every total</h2>
+        </div>
+        <div class="table-wrap" style="background:rgba(255,255,255,.06);">
+          <table>
+            <thead>
+              <tr><th>Zone</th><th>Areas</th><th>Fee (UGX)</th><th>Time</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Zone A</td><td>Kitintale, Ntinda</td><td class="num">2,000</td><td>30–45 min</td></tr>
+              <tr><td>Zone B</td><td>Namuwongo, Nakawa</td><td class="num">3,000</td><td>45–60 min</td></tr>
+              <tr><td>Zone C</td><td>Kampala CBD</td><td class="num">5,000</td><td>1–2 hours</td></tr>
+              <tr><td>Zone D</td><td>Bukoto, Kisaasi, Kololo</td><td class="num">6,000</td><td>1–2 hours</td></tr>
+              <tr><td>Free</td><td>Kitintale &amp; Ntinda, orders above UGX 60,000</td><td class="num">0</td><td>Same day</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--wa" href="https://wa.me/256750568522?text=Hello%20Sweet%20Moments%20Bakery%2C%20I%20would%20like%20to%20place%20an%20order" target="_blank" rel="noopener">Start an order</a>
+          <a class="btn btn--ghost" href="policies.html">Delivery &amp; returns policy</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="index.html" style="margin-bottom:.8rem;">
+            <img class="brand__mark" src="logo.svg" alt="Sweet Moments Bakery">
+            <span><span class="brand__name">Sweet Moments</span><span class="brand__sub">Bakery · Kitintale</span></span>
+          </a>
+          <p>Freshly baked bread, cookies, cupcakes, birthday cakes, pastries and muffins — made in Kitintale and delivered across Kampala.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products &amp; prices</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="pay.html">How to pay &amp; order</a></li>
+            <li><a href="policies.html">Policies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Opening hours</h4>
+          <ul>
+            <li>Mon – Fri · 6:00 am – 8:00 pm</li>
+            <li>Saturday · 6:00 am – 9:00 pm</li>
+            <li>Sunday · 7:00 am – 6:00 pm</li>
+            <li>Public holidays · 8:00 am – 4:00 pm</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Talk to us</h4>
+          <ul class="contact-list">
+            <li><span class="k">Call</span> <a href="https://wa.me/256750568522" target="_blank" rel="noopener">+256 750 568 522</a></li>
+            <li><span class="k">Email</span> <a href="mailto:sweetbakeries@gmail.com">sweetbakeries@gmail.com</a></li>
+            <li><span class="k">Visit</span> Kitintale, Nakawa Division, Kampala, Uganda</li>
+          </ul>
+          <h4 class="spaced">Follow the bakery</h4>
+          <div class="social-row">
+            <a href="https://www.facebook.com/SweetMomentsBakeryUG" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.tiktok.com/@sweetmoments.ug" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://www.youtube.com/@SweetMomentsBakeryUG" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.linkedin.com/company/sweet-moments-bakery" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>Student project for <strong>BUC3106 at MUBS</strong> · Not a real shop · Payments are not active</span>
+        <span>© 2026 Sweet Moments Bakery (student project) · <a href="policies.html">Privacy &amp; terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
