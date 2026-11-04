@@ -10,7 +10,7 @@
 ```
 sweetmoments-site/
 ├── index.html        Home: heading, one sentence about us, "Order on WhatsApp" button, three reasons to choose us
-├── products.html     All 8 products with name, description, price in UGX, picture and a filter by collection
+├── products.html     All ten products with name, description, price in UGX, picture and a filter by collection
 ├── about.html        Our story, our values, and the ten-member team with their roles
 ├── pay.html          How to Pay and Order: 5 methods × (3 steps + details), confirmation, refunds, delivery fees
 ├── policies.html     Delivery, returns, privacy notice (Data Protection and Privacy Act, 2019), short terms, claims table
@@ -33,9 +33,9 @@ sweetmoments-site/
 
 ## 2. The web address we chose, and why
 
-| | Address |
+| Field | Address |
 |---|---|
-| **Free address (live now)** | `https://<group-username>.github.io/sweetmoments-site/` — GitHub Pages gives https (padlock) for free on public repositories. |
+| **Free address (live now)** | `https://sweetmomentsbakery1.github.io/sweetmoments-site/` — GitHub Pages gives https (padlock) for free on public repositories. |
 | **The address the business would buy** | **`www.sweetmoments.co.ug`** |
 
 **Why `sweetmoments.co.ug`:**
